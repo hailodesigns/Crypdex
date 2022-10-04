@@ -1,0 +1,406 @@
+* {
+     margin: 0;
+     padding: 0;
+     transition: 0.1s;
+     scroll-behavior: smooth;
+}
+a:link{
+  text-decoration: none!important;
+}
+ body {
+	font-family: 'Inconsolata', monospace;
+     text-align: left;
+     font-size: 18px;
+     color: #303030;
+}
+h1 {
+	font-family: 'Spectral SC', serif;
+}
+ .button-active {
+     color: #781614;
+     background-color: #fff;
+}
+nav {
+     background-color: #000;
+     color: #EFEFEF;
+     height:75px;
+}
+ nav .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+nav .container .top-buttons{
+	margin-top: 20px;
+}
+.container .login-button, .container .menu-button, .container .contact-button {
+     padding: 1em 1em;
+     cursor: pointer;
+}
+ .nav-menu {
+     background-color: rgba(120, 22, 20, 0.8);
+     color: #fff;
+     display: center;
+     justify-content: center;
+     width: 30%;
+     margin: 0 auto;
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+     display: none;
+}
+ .nav-menu .container {
+     padding: 1.5em;
+     display: flex;
+}
+ .nav-menu .container ul {
+     list-style: none;
+     margin: 0 auto;
+     width: 100%;
+}
+ .nav-menu .container ul li {
+     padding: 0.25em 2em;
+}
+.nav-menu .container a li {
+	color:#fff;
+}
+ .hide {
+     display: none;
+}
+ .login-form {
+     background-color: rgba(120, 22, 20, 0.8);
+     padding: 1em 3em 0;
+     color: #fff;
+     display: none;
+     width: 30%;
+     margin: 0 auto;
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+     justify-content: center;
+}
+ .login-form .container {
+     padding: 0 0.5em;
+}
+ .login-form h4 {
+     font-weight: 400;
+}
+ .login-form input {
+     width: calc(100% - 1em);
+     border: none;
+     height: 2em;
+     margin: 0.5em 0;
+     font-size: 1em;
+     padding: 0 0.5em;
+}
+ .login-form .sign-in-button {
+ 	 margin-left: 40px;
+     background-color: #000;
+     color: #fff;
+     font-weight: 600;
+     text-transform: uppercase;
+     text-align: center;
+     width: 50%;
+     height: 2em;
+     justify-content: center;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     cursor: pointer;
+}
+.contact-form {
+     background-color: rgba(120, 22, 20, 0.8);
+     padding: 1em 3em 0;
+     color: #fff;
+     display: none;
+     width: 30%;
+     margin: 0 auto;
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+     justify-content: center;
+
+}
+ .contact-form .container {
+     padding: 0 0.5em;
+}
+ .contact-form h4 {
+     font-weight: 400;
+}
+ .contact-form input {
+     width: calc(100% - 1em);
+     border: none;
+     height: 2em;
+     margin: 0.5em 0;
+     font-size: 1em;
+     padding: 0 0.5em;
+}
+ .contact-form .sign-in-button {
+	 margin-left: 40px;
+     background-color: #000;
+     color: #fff;
+     font-weight: 600;
+     text-transform: uppercase;
+     text-align: center;
+     width: 50%;
+     height: 2em;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     cursor: pointer;
+}
+.largelogo {
+	margin: 3.5em auto;
+}
+.iris {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #fff;
+  background-color: #fff;
+  border-radius:50%;
+  left:678px; 
+  top:313px;
+  z-index: 2;
+}
+.aboutus {
+	margin: 0 auto;
+	color: #fff;
+	background-color:#781614;
+	width: 100%;
+	height: 400px;
+}
+.aboutus .container{
+	width: 50%;
+	padding: 3.5em 0 0;
+}
+.aboutus h1 {
+	text-align: center;
+	font-family: 'Spectral SC', serif;
+	margin-bottom: 20px;
+}
+
+.thumbnail {
+	width: 100%;
+	height: auto;
+}
+
+.cryptids .row {
+	margin-bottom: 2em;
+}
+.cryptids h3 {
+	color:#781614;
+}
+.more-details-button {
+  height: 50px;
+  width: 100%;
+  background-color: #781614;
+  cursor: pointer;
+  transition: 0.1s;
+  }
+  
+.eye-closed,
+.eye-open {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height:50px;
+}
+
+.eye-closed {
+  background-image: url(eye_off.svg);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eye-open {
+  background-image: url(eye_on.svg);
+  background-size:50px;
+    background-repeat: no-repeat;
+  background-position: center;
+}
+.cryptid-details{
+	height:auto;
+	width:100%;
+	background-color: #000;
+	color:#fff;
+	border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display:none;
+}
+
+.cryptid-details p{
+	padding: 10px 10px;
+	font-size: 12px;
+}
+.cryptid-details h4{
+	text-align: center;
+	padding: 0 0 1em 0;
+	color: #fff;
+}
+.cryptid-details h4:hover{
+	text-align: center;
+	padding: 0 0 1em 0;
+	color:  #781614;
+	cursor: pointer;
+}
+
+.spotting {
+	background-color: #000;
+	color: #fff;
+	margin: 2em auto;
+	     	width: 100%;
+	height: auto;
+}
+.spotting .container{
+	margin: 2em auto;
+	width: 50%;
+	height: auto;
+	padding: 2em 0;
+}
+.spotting .container .row{
+	justify-content: space-between;
+	text-align: left;
+}
+.spotting input {
+	margin-bottom: 1em;
+	width: 400px;
+}
+.spotting input[type="text"]{
+	height: 100px;
+}
+.spotting input[type="submit"]{
+	background-color: #fff;
+	color: #000;
+     font-weight: 600;
+     text-transform: uppercase;
+     text-align: center;
+     border-style: none;
+     justify-content: center;
+  width: 100%;
+}
+
+
+ .product-card {
+     margin: 1em auto;
+     width: 60%;
+}
+ .product-card {
+     background-size: 28em 15em;
+     background-position: center;
+     height: 14em;
+     transition: 0.2s;
+}
+.product-photo {
+     height: 300px;
+     width: 100%;
+     background-image: url(images/book.jpg);
+     background-repeat: no-repeat;
+  	 background-size: cover;
+}
+.photo-active {
+     background-image: url(images/book-open.jpg)
+}
+ .product-card .product-details {
+     margin-top: -5px;
+     background-color: #781614;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+}
+ .product-card .product-details h4, .product-card .product-details p {
+     padding: 0.7em 1.25em;
+}
+ .product-card .product-details div {
+     display: flex;
+}
+ .product-card .book-details {
+     background-color: #000;
+     color: #fff;
+}
+ .product-card .book-details .active {
+     background-color: #781614;
+     color: #fff;
+}
+ .product-card .size-chart, .product-card p {
+     padding: 1em 1.25em;
+}
+ .product-card .size-chart ul, .product-card p ul {
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     margin-top: 1em;
+}
+ .product-card .size-chart ul li, .product-card p ul li {
+     padding: 0.5em;
+     background-color: #fff;
+     color: #000;
+     width: 100%;
+     text-align: center;
+     margin-right: 2px;
+}
+ .product-card .buy-now-button {
+     background-color:#781614;
+     color: #fff;
+     text-align: center;
+     padding: 0.75em;
+     cursor: pointer;
+}
+
+#shop {
+	margin-bottom: 40px;
+}
+
+ .shopping-cart {
+     background-color: #781614;
+     position: absolute;
+     top: 60px;
+     right: 10px;
+     width: 70px;
+     z-index: 99;
+     height: 3.5em;
+     border-radius: 50%;
+     display: none;
+}
+
+ .shopping-cart .container {
+     display: flex;
+     justify-content: space-between;
+     padding: 1em;
+}
+ .shopping-cart .container .cart {
+     display: flex;
+}
+ .shopping-cart .container .cart object {
+     width: 100%;
+     height: 100%;
+}
+
+a h3 {
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .iris {
+    width: 25px;
+  height: 25px;
+    left:46%; 
+  top:210px;
+  }
+  .aboutus {
+  	height: 550px;
+  	
+  }
+  .aboutus .container{
+	width: 70%;
+	padding: 3.5em 0 0;
+}
+}
